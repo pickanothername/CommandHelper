@@ -1,5 +1,6 @@
---Underline-- = not possible/partially done
-~~Strikethrough~~ = done
+<ins>Underline</ins> = not possible/partially done
+
+<del>Strikethrough</del> = done
 
 1. Ships to be made, like a structure that is on water in some way, which will be controlled by signs, which one would be named [engine] when written, but then turned into "This way!" after pressing done. Then when right clicking on that sign, it'll move the opposite direction of the sign by one block. Of course, ships can be made out of anything except for sand, gravel, stone, grass, mycelium or dirt. It also has another sign that can be used called [elevator] when typed in, when done, it shall then say "Vertical Movement" and if left clicked, then it shall go up by one block. If right clicked, it shall go down by one block. A ship can be any amount of blocks, and will say "Obstacles on the course" if the structure runs into sand/gravel/dirt etc. There is another sign that says on the first line [ships] then either ship, plane, submarine or rocket. Rockets shall flip vertically when at 100Y. Submarines can use [elevator] only if touching water, in any way. Planes can use [elevator] and practically anything, and can fly anywhere. Ships are well, the smaller end of the stick without the power to use [elevator]. 
 
@@ -25,7 +26,7 @@
 
 12. Plotme. Can you replicate plotme?
 
-13. ~~Custom Heads. Heads can be spawned by /head {player name, or mob name}. There is also a 12% chance a head of a mob can be spawned.~~
+13. <del>Custom Heads. Heads can be spawned by /head {player name, or mob name}. There is also a 12% chance a head of a mob can be spawned.</del>
 
 14. Locks. Place a sign on a container to make it only used for the certain player. Right click it and then say /lock add {name} to add another person's use to your chest.
 
@@ -34,10 +35,10 @@
 16. Usage wand. use a blaze rod for this, right click to shuffle through spells, left click to use a spell. The spells are: Lightning (Makes lightning appear at the location pointed to) explosion wave (makes a wave of lit tnt!) confuse (makes the pointed to entity get nausea) rift (sends the pointed to entity warp to the end.) grab (makes an entity come closer to you) push (makes an entity go farther from you).
 
 17. Misc:
-~~/enderchest to see your ender chest.~~
-~~/workbench to see a workbench.~~
-__/furnace to see your private furnace__ (furnace not possible).
-~~/tree to equip a tree, right click to make a tree.~~
+<del>/enderchest to see your ender chest.</del>
+<del>/workbench to see a workbench.</del>
+<ins>/furnace to see your private furnace</ins> (furnace not possible).
+<del>/tree to equip a tree, right click to make a tree.</del>
 /sethome {name} to make a personal warp.
 /home {name} to get to it.
 /setwarp {name} to make a warp (1000$ for a player to make one).
