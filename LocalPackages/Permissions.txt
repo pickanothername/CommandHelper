@@ -1,0 +1,3 @@
+admin: A tool for the owners
+staff: Something intended only for use by moderators
+user: A command used by everyone
