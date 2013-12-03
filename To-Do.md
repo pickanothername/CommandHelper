@@ -36,7 +36,7 @@
 
 17. Misc:
 
-<del>/enderchest to see your ender chest.</del>
+<del>/enderchest to see your ender chest.</del><BR>
 
 <del>/workbench to see a workbench.</del>
 
