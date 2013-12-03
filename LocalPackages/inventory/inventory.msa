@@ -1,6 +1,0 @@
-#Do we need permissions for these commands?
-*:/enderchest = penderchest()
-
-*:/workbench = pworkbench()
-
-#Doesn't look like we can have a /furnace command - no API
