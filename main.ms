@@ -59,6 +59,26 @@ bind(item_enchant, null, null, @event, @server_name,
     )
 )
 
+store_value(tree_toggle, 'false')
+
+bind(player_interact, null, null, @event,
+    if(equals(@event[action], 'right_click_block'),
+      assign(@name, get_itemmeta(@event[player], @event[item]))
+      if(nequals(@name[display], null),
+          assign(@name, @name[display])
+          #assign(@name, @name[0])
+          #assign(@name, @name[elevel])
+        )
+      if(equals(@name, '§2Tree Grower'),
+        if(equals(@event[facing], 'up'),
+          assign(@location, @event[location])
+          assign(@location[y], expr(@y = @y + 1))
+          generate_tree(@location)
+        )
+      )
+    )
+)
+
 bind(entity_damage, null, null, @event,
     console(@event, false)
     
