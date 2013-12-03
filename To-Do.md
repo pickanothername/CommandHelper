@@ -35,6 +35,7 @@
 16. Usage wand. use a blaze rod for this, right click to shuffle through spells, left click to use a spell. The spells are: Lightning (Makes lightning appear at the location pointed to) explosion wave (makes a wave of lit tnt!) confuse (makes the pointed to entity get nausea) rift (sends the pointed to entity warp to the end.) grab (makes an entity come closer to you) push (makes an entity go farther from you).
 
 17. Misc:
+
 <del>/enderchest to see your ender chest.</del>
 
 <del>/workbench to see a workbench.</del>
