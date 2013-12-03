@@ -1,0 +1,30 @@
+staff:/rename $name = >>>
+  assign(@name, concat($name, '§r'))
+  assign(@name, replace(@name, '&', '§'))
+  assign(@name, replace(@name, '^&', '&'))
+  assign(@name, replace(@name, '^§', '&'))
+  set_itemmeta(player(), pinfo(player(), 15), array(display: @name, lore: array('Hi', ':3')))
+  msg(get_itemmeta(player(), pinfo(player(), 15)))
+<<<
+
+staff:/relore $text $line = >>>
+  assign(@text, concat($text, '§r'))
+  assign(@text, replace(@text, '&', '§'))
+  assign(@text, replace(@text, '^&', '&'))
+  assign(@text, replace(@text, '^§', '&'))
+  assign(@meta, get_itemmeta(player(), pinfo(player(), 15)))
+  if(equals($line, 1),
+    set_itemmeta(player(), pinfo(player(), 15), array(lore: array(@text, @meta[lore][1])))
+  )
+  if(equals($line, 2),
+    set_itemmeta(player(), pinfo(player(), 15), array(lore: array(@meta[lore][0], @text)))
+  )
+<<<
+
+staff:/reenchant $enchants = >>>
+  set_itemmeta(player(), pinfo(player(), 15), array(enchants: $enchants))
+<<<
+
+#staff:/relore = pworkbench()
+
+#staff:/reenchant = 

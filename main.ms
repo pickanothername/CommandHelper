@@ -60,6 +60,11 @@ bind(item_enchant, null, null, @event, @server_name,
 )
 
 #store_value(tree_toggle, 'false')
+bind(tab_complete_command, null, null, @event,
+  if(equals(@event[command], 'reenchant'),
+    modify_event(completions, enchantment_list())
+  )
+)
 /*
 bind(player_interact, null, null, @event,
     if(equals(@event[action], 'right_click_block'),

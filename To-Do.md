@@ -20,7 +20,7 @@
 
 9. Bank. Use /bank deposit to deposit an item, and /bank withdraw to withdraw an item. Loans can also be made, every minecraft day adds one more amount of an item needed to be paid back. After 20 minecraft days, an admin shall receive a PM of which players has not fully paid back their loan. To loan, say /loan {item} {amount}.
 
-10. Renaming/Reloring. To easily rename an item, say /rename {name} and to relore, do /relore {line number} {text} Enchantments shall be placed like this too, but also there'd be a list of exact enchantment names (please!)
+10. <del>Renaming/Reloring. To easily rename an item, say /rename {name} and to relore, do /relore {line number} {text} Enchantments shall be placed like this too, but also there'd be a list of exact enchantment names (please!)</del>
 
 11. Market. use /market listings to see everything up for sale. To make something up for sale, type /market create {amount} {price}. To buy an item, double click on the item, and it shall be in your inventory. The seller shall receive their money.
 
