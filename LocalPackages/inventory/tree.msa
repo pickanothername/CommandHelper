@@ -1,12 +1,20 @@
+/*
 staff:/tree = >>>
-  assign(@toggle, get_value(tree_toggle))
-  if(equals(@toggle, 'false'),
-    pgive_item(player(), 17, 1, array(display: '§2Tree Grower'))
-    assign(@toggle, 'true')
-  )
-  if(equals(@toggle, 'true'),
-    ptake_item(player(), 17, 8)
+  assign(@toggle, get_value(concat(player(), '_', tree_toggle)))
+  if(equals(@toggle, null),
     assign(@toggle, 'false')
   )
-  store_value(tree_toggle, @toggle)
+  if(equals(@toggle, 'false'),
+    pgive_item(player(), 17, 1, array(display: '§2Tree Grower'))
+    #pgive_item(player(), 17, 1, array(display: 'Tree Grower'))
+    assign(@toggle, 'true'),
+  #else:
+    if(equals(@toggle, 'true'),
+      ptake_item(player(), 17, 8)
+      assign(@toggle, 'false')
+    )
+  )
+  store_value(concat(player(), '_', tree_toggle), @toggle)
+  msg(@toggle)
 <<<
+*/

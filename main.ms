@@ -59,25 +59,34 @@ bind(item_enchant, null, null, @event, @server_name,
     )
 )
 
-store_value(tree_toggle, 'false')
-
+#store_value(tree_toggle, 'false')
+/*
 bind(player_interact, null, null, @event,
     if(equals(@event[action], 'right_click_block'),
-      assign(@name, get_itemmeta(@event[player], @event[item]))
-      if(nequals(@name[display], null),
-          assign(@name, @name[display])
-          #assign(@name, @name[0])
-          #assign(@name, @name[elevel])
-        )
-      if(equals(@name, '§2Tree Grower'),
-        if(equals(@event[facing], 'up'),
-          assign(@location, @event[location])
-          assign(@location[y], expr(@y = @y + 1))
-          generate_tree(@location)
+      if(and(equals(array_index_exists(get_itemmeta(@event[player], pinfo(@event[player], 15)), display), 'true'), equals(get_itemmeta(@event[player], pinfo(@event[player], 15))[display], '§2Tree Grower')),
+        #assign(@name, get_itemmeta(@event[player], pinfo(@event[player], 15)))
+        #if(nequals(array_index_exists(array(@name), display), 'false'),
+            assign(@name, @name[display])
+            #assign(@name, @name[0])
+            #assign(@name, @name[elevel])
+          #)
+        if(equals(@name, '§2Tree Grower'),
+          if(equals(@event[facing], 'up'),
+            assign(@loc, @event[location])
+            msg(@loc)
+            #assign(@loc[y], add(@loc[y], 1))
+            set_block_at(@loc[x], @loc[y], @loc[z], 0)
+            
+            #generate_tree(@loc)
+            #assign(@chunk, get_chunk_loc(@loc))
+            #msg(@chunk)
+            #refresh_chunk(@chunk[x], @chunk[z])
+          )
         )
       )
     )
 )
+*/
 
 bind(entity_damage, null, null, @event,
     console(@event, false)
