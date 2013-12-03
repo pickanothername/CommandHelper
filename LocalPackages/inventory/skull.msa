@@ -1,0 +1,11 @@
+*:/head [$player] = >>> 
+        foreach(0..31, @i,
+        if(pinv(player(), @i) == null){
+            @array = associative_array()
+            @array[@i] = array(type: 397, data: 3, meta: array(owner: $player))
+            set_pinv(player(), @array)
+            msg('Player head added!')
+            break()
+            }
+        )
+<<<
