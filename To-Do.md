@@ -30,7 +30,24 @@
 
 16. Usage wand. use a blaze rod for this, right click to shuffle through spells, left click to use a spell. The spells are: Lightning (Makes lightning appear at the location pointed to) explosion wave (makes a wave of lit tnt!) confuse (makes the pointed to entity get nausea) rift (sends the pointed to entity warp to the end.) grab (makes an entity come closer to you) push (makes an entity go farther from you).
 
-√ 17. Misc: /enderchest to see your ender chest, √ /workbench to see a workbench, ~~/furnace to see your private furnace~~ (furnace not possible), √ /tree to equip a tree, right click to make a tree. /sethome {name} to make a personal warp, /home {name} to get to it, /setwarp {name} to make a warp (1000$ for a player to make one), /warp {name} to get there, /warps to list the warps, /speed {number} to make your overall speed faster, /weather {clear/rain} to make it a certain weather, time {day/night/ticks number} to make it a certain time, /clear {player} to take off everything in your inventory, /invsee {player} to have yourinventories connected, you can take and put things in the other's inventory. /trade {player} to trade items. One player dobule clicks on an item they like, and it temporarily gets renamed to "want", then the other player does the same. If a player doesn't want to trade, press e. /tpa {player} to teleport to a player, with no cooldown or warmup. /tp {player} {coordinites or player} to do this without the other player's permission. /fly to leap in the air and fly, please note the leaping since my computer is laggy enough.
+17. Misc:
+√ /enderchest to see your ender chest.
+√ /workbench to see a workbench.
+~~/furnace to see your private furnace~~ (furnace not possible).
+√ /tree to equip a tree, right click to make a tree.
+/sethome {name} to make a personal warp.
+/home {name} to get to it.
+/setwarp {name} to make a warp (1000$ for a player to make one).
+/warp {name} to get there.
+/warps to list the warps.
+/speed {number} to make your overall speed faster.
+/weather {clear/rain} to make it a certain weather.
+/time {day/night/ticks number} to make it a certain time.
+/clear {player} to take off everything in your inventory.
+/invsee {player} to have your inventories connected, you can take and put things in the other's inventory. /trade {player} to trade items. One player dobule clicks on an item they like, and it temporarily gets. renamed to "want", then the other player does the same. If a player doesn't want to trade, press e.
+/tpa {player} to teleport to a player, with no cooldown or warmup.
+/tp {player} {coordinites or player} to do this without the other player's permission.
+/fly to leap in the air and fly, please note the leaping since my computer is laggy enough.
 
 18. Custom items: unless mythicdrops doesn't work, can you replicate it? Just with more socket gems. I can send it to you when you get to here. 
 
