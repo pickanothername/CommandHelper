@@ -3,7 +3,8 @@ staff:/rename $name = >>>
   assign(@name, replace(@name, '&', '§'))
   assign(@name, replace(@name, '^&', '&'))
   assign(@name, replace(@name, '^§', '&'))
-  set_itemmeta(player(), pinfo(player(), 15), array(display: @name, lore: array('Hi', ':3')))
+  assign(@meta, get_itemmeta(player(), pinfo(player(), 15)))
+  set_itemmeta(player(), pinfo(player(), 15), array(display: @name, lore: @meta[lore]))
   msg(get_itemmeta(player(), pinfo(player(), 15)))
 <<<
 
@@ -13,11 +14,21 @@ staff:/relore $text $line = >>>
   assign(@text, replace(@text, '^&', '&'))
   assign(@text, replace(@text, '^§', '&'))
   assign(@meta, get_itemmeta(player(), pinfo(player(), 15)))
+  assign(@lore, @meta[lore])
+  msg(@meta)
   if(equals($line, 1),
-    set_itemmeta(player(), pinfo(player(), 15), array(lore: array(@text, @meta[lore][1])))
+    if(equals(@lore, null),
+      set_itemmeta(player(), pinfo(player(), 15), array(display: @meta[display], lore: array(@text, ''))),
+    #else:
+      set_itemmeta(player(), pinfo(player(), 15), array(display: @meta[display], lore: array(@text, @lore[1])))
+    )
   )
   if(equals($line, 2),
-    set_itemmeta(player(), pinfo(player(), 15), array(lore: array(@meta[lore][0], @text)))
+    if(equals(@lore, null),
+      set_itemmeta(player(), pinfo(player(), 15), array(display: @meta[display], lore: array('', @text))),
+    #else:
+      set_itemmeta(player(), pinfo(player(), 15), array(display: @meta[display], lore: array(@lore[0], @text)))
+    )
   )
 <<<
 
