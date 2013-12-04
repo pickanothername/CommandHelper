@@ -1,0 +1,19 @@
+#Untested code.
+*:/sethome [$] = >>>
+    if (equals($, '')) {
+        die(color(red), 'You did not specify a name for your home.')
+    } else {
+        assign(@p, strip_colors(player()))
+        store_value(concat('homes.', @p, '.', $, '.loc'), ploc())
+        msg(color(gray), 'Your home has been set!')
+    }
+<<<
+
+*:/home [$]  = >>>
+    if (equals($, '')) {
+        die(color(red), 'You did not specify a home.')
+    } else {
+        assign(@prefix, concat('homes.', @player, '.', @name, '.'))
+        set_ploc(get_value(concat(@prefix, 'loc')))
+    }
+<<<
