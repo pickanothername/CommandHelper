@@ -13,8 +13,8 @@
 assign(@server_name, '<Server Name>')
 */
 
-#Echo out a server greeting to the console
-console('Welcome to this server, which is running CommandHelper! (Change this message in plugins/CommandHelper/main.ms)')
+#Echo out a server greeting to the #console
+#console('Welcome to this server, which is running CommandHelper! (Change this message in plugins/CommandHelper/main.ms)')
 
 #Bind an event to the player join, and tell ops hello. We send in
 #@server_name, so we can use it inside the event handler
@@ -38,7 +38,7 @@ bind(item_enchant, null, null, @event, @server_name,
     #msg(@event)
     
     assign(@rand, rand(1))
-    console(@rand, false)
+    #console(@rand, false)
     if(equals(@rand, 0),
       if(equals(@event[levels], 10),
         modify_event(enchants, array(array(etype: 'ARROW_FIRE', elevel: 0)))
@@ -94,7 +94,7 @@ bind(player_interact, null, null, @event,
 */
 
 bind(entity_damage, null, null, @event,
-    console(@event, false)
+    #console(@event, false)
     
     if(equals(@event[cause], 'PROJECTILE'),
       #msg('1')
