@@ -12,7 +12,7 @@
 
 5. Other Mobs. A kraken for the seas (A squid) and a wyvern for the skies (ender dragon). Krakens basically use fireballs, and lash out at players. They only spawn in the ocean, but can be artificially spawned by using /k spawnegg {name}. If a direct approach is in order, use /kraken {name}. This is just like the wyvern, but the wyvern only spawns in 150+ Y and does not try to go lower than 100Y. 
 
-6. World Guard. Is it possible to replicate it?
+6. <ins>World Guard. Is it possible to replicate it?</ins> (We will use WorldGuard.)
 
 7. Hangman. It shall be used by /hangman new {word} and /hangman guess {letter/cluster of letters.}. 
 
