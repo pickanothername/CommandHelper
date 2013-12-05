@@ -44,9 +44,9 @@
 
 <del>/tree to equip a tree, right click to make a tree.</del>
 
-/sethome {name} to make a personal warp.
+<del>/sethome {name} to make a personal warp.</del>
 
-/home {name} to get to it.
+<del>/home {name} to get to it.</del>
 
 /setwarp {name} to make a warp (1000$ for a player to make one).
 
